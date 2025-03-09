@@ -2,7 +2,7 @@
 
 (Explanation of how the original code works can be found via [tutorial on Medium](https://medium.com/@bryn.bellomy/solidity-tutorial-building-a-simple-auction-contract-fcc918b0878a))
 
-Forking the original repo to code various auction formats, including:
+Forking the original repo to code various auction formats in the contracts folder, including:
 
 (a) Traditional Auctions: First-price, Second-price, All-pay (all sealed-bid)
 (b) Batch Auctions
