@@ -1,10 +1,14 @@
-# Ethereum Auction dApp (Solidity + Truffle + React)
+# Ethereum Auction dApp (Solidity + Truffle + React), FORK CHANGES
 
-Check out my [tutorial on Medium](https://medium.com/@bryn.bellomy/solidity-tutorial-building-a-simple-auction-contract-fcc918b0878a) that explains the contracts that power this app.
+(Explanation of how the original code works can be found via [tutorial on Medium](https://medium.com/@bryn.bellomy/solidity-tutorial-building-a-simple-auction-contract-fcc918b0878a))
 
-This is a simple auction platform.  You can create new auctions, set start and end times (and a bid increment), bid using ETH, and withdraw funds.
+Forking the original repo to code various auction formats, including:
 
-I used ConsenSys's [truffle-webpack-demo](https://github.com/ConsenSys/truffle-webpack-demo) as a starting point, because there's quite a bit of boilerplate required between the various libraries used here.
+(a) Traditional Auctions: First-price, Second-price, All-pay (all sealed-bid)
+(b) Batch Auctions
+(c) 
+
+Original author used ConsenSys's [truffle-webpack-demo](https://github.com/ConsenSys/truffle-webpack-demo) as a starting point, because there's quite a bit of boilerplate required between the various libraries used here.
 
 ## Running
 
