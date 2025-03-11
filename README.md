@@ -1,16 +1,17 @@
-# Ethereum Auction dApp (Solidity + Truffle + React), FORK CHANGES
-
+# Intermediary-Proof Auction Mechanisms
+Forked a benchmark model to build an intermediary-proof auction mechanism, the benchmark model can be found in "contracts" > "Basic Auction.sol"
 (Explanation of how the original code works can be found via [tutorial on Medium](https://medium.com/@bryn.bellomy/solidity-tutorial-building-a-simple-auction-contract-fcc918b0878a))
 
-Forking the original repo to code various auction formats in the contracts folder, including:
+The theoretical model comes from the paper "Maximizing Revenue in the Presence of Intermediaries" by Aggarwal.G, Bhawalkar, K. Guruganesh, G. and Perlroth, A.2022.
 
-(a) Traditional Auctions: First-price, Second-price, All-pay (all sealed-bid)
-(b) Batch Auctions
-(c) 
+### TL;DR: 
+The paper considers a mechanism design problem of selling $k$ items to $n$ unit-demand buyers with private valuations for the items. Divide the number of buyers (aggregate demand) by the number of items, and take their ceiling function integer value $s$, which means we have $s$ groups of buyers, then the intermediary-proof mechanism is a uniform single-item pricing scheme where each item is sold separately at a price set equal to the highest expected buyer valuation within each of the $s$ groups. The mechanism of course assumes a commonly known valuation distribution prior. 
 
+
+### Technical Notes
 Original author used ConsenSys's [truffle-webpack-demo](https://github.com/ConsenSys/truffle-webpack-demo) as a starting point, because there's quite a bit of boilerplate required between the various libraries used here.
 
-## Running
+### Running
 
 The Web3 RPC location will be picked up from the `truffle.js` file.
 
